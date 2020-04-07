@@ -1,6 +1,11 @@
 /* ================================= 
  Global rules and element rules
 ==================================== */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  border-radius: 2%;
+}
 
 /* ================================= 
  Structural content style
@@ -9,12 +14,15 @@
 /* ---------- The Header ---------- */
 
 /* ---------- Main content ---------- */
+.mobile {
+  font-size: 15rem;
+}
 
 /* ------- Additional content ------- */
 
 /* --------- The Page Footer --------- */
-.bg-footer {
+/* .bg-footer {
   color: #1b1e21 !important;
   background-color: #d6d8d9 !important;
   border-color: #c6c8ca !important;
-}
+} */
