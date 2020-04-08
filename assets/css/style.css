@@ -1,22 +1,48 @@
 /* ================================= 
- Global rules and element rules
+    Global rules and element rules
 ==================================== */
 .img-fluid {
+  /* Bootstrap class modified to apply border radious to images */
   max-width: 100%;
   height: auto;
   border-radius: 2%;
 }
 
 /* ================================= 
- Structural content style
+              Home Page
 ==================================== */
 
 /* ---------- The Header ---------- */
 
 /* ---------- Main content ---------- */
 .mobile {
+  /* Increase size of a Font-Awesome mobile telephone icon */
   font-size: 15rem;
 }
+
+/* ------- Additional content ------- */
+
+/* --------- The Page Footer --------- */
+
+/* ================================= 
+            Portfolio Page
+==================================== */
+
+/* ---------- The Header ---------- */
+
+/* ---------- Main content ---------- */
+
+/* ------- Additional content ------- */
+
+/* --------- The Page Footer --------- */
+
+/* ================================= 
+            Contact Page
+==================================== */
+
+/* ---------- The Header ---------- */
+
+/* ---------- Main content ---------- */
 
 /* ------- Additional content ------- */
 

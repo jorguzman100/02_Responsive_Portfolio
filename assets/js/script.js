@@ -1,11 +1,26 @@
 /* ================================= 
-                Home
+    Global functionality
 ==================================== */
 
 /* ================================= 
-                Portfolio
+              Home Page
 ==================================== */
 
+/* ---------- The Header ---------- */
+
+/* ---------- Main content ---------- */
+
+/* ------- Additional content ------- */
+
+/* --------- The Page Footer --------- */
+
+/* =================================
+            Portfolio Page
+==================================== */
+
+/* ---------- The Header ---------- */
+
+/* Shows the portfolio section accoding to the type of project dropdown options. */
 const dropdownElement = document.getElementsByClassName("dropdown-item");
 const typeOfProjectSection = document.getElementsByClassName("projectTypes");
 
@@ -23,13 +38,20 @@ for (let i = 0; i < dropdownElement.length; i++) {
   });
 }
 
-/* for (let a = 0; a < dropdownElement.length; a++) {
-  dropdownElement[a].addEventListener("click", () => {
-    alert("a-clicked");
-    window.scrollTo(0, 0);
-  });
-} */
+/* ---------- Main content ---------- */
 
-/* ================================= 
-                Contact
+/* ------- Additional content ------- */
+
+/* --------- The Page Footer --------- */
+
+/* =================================
+            Contact Page
 ==================================== */
+
+/* ---------- The Header ---------- */
+
+/* ---------- Main content ---------- */
+
+/* ------- Additional content ------- */
+
+/* --------- The Page Footer --------- */
