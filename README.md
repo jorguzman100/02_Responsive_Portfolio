@@ -4,7 +4,7 @@ Built with HTML, CSS, JavaScript and Bootstrap library.
 
 
 ## The Challenge
-***
+
 The author is interested on launching a Web Development and Digital Marketing Agency. For this purpose, it is requiered to have a Portfolio website where the best example projects are shown.
 
 The portfolio will integrate the following development best practices and characteristics:
@@ -20,42 +20,45 @@ Additional requirements:
 - [x] Navbar consistent on each page.
 - [x] Navbar on each page must contain links to Home/About, Contact, and Portfolio pages.
 - [x] All links must work.
-- [ ] Must contain your personalized information. (bio, name, images, links to social media, etc.)
-
-Note. The last point was adjusted considering this project is for a company portfolio instead of a personal web developer portfolio.
 
 ## The  development process
-***
+
 In order to accomplish the challenge, the following steps were executed:
-- Define the purpose and plan the general idea of the site.
-- Sketch the pages and main sections, considering two stages:
-  - Mobile-first approach.
-  - Responsive design for larger screen sizes.
-- Create the base-line layout and grid.
-- Search for assets (images, icons, logo, etc.)
-- Integrate assets to the layout.
-- Add basic functionality like links, navigation bar and dropdown group.
-- Add minimum CSS adjustments.
-- Apply semantic HTML.
-- Asses valid HTML.
-- Final review and proper documentation.
+1. Define the purpose and plan the general idea of the site.
+2. Sketch the pages and main sections, considering two stages:
+   - Mobile-first approach.
+   - Responsive design for larger screen sizes.
+3. Create the base-line layout and grid.
+4. Search for assets (images, icons, logo, etc.)
+5. Integrate assets to the layout.
+6. Add basic functionality like links, navigation bar and dropdown group.
+7. Add minimum CSS adjustments.
+8. Apply semantic HTML.
+9. Asses valid HTML.
+10. Final review and proper documentation.
 
 ## The sketches
-***
+
 __Mobile-first approach__
 
-![Home-sm](./sketches/Home-sm.png)
-![Portfolio-sm](./sketches/Portfolio-sm.png)
-![Contact-sm](./sketches/Contact-sm.png)
+Home page sketch \
+![Home-sm](./sketches/Home-sm.png) \
+Portfolio page sketch \
+![Portfolio-sm](./sketches/Portfolio-sm.png) \
+Contact page sketch \
+![Contact-sm](./sketches/Contact-sm.png) 
 
 __Larger Screens__
+Home page sketch \
 ![Home-lg](./sketches/Home-lg.png)
+Portfolio page sketch \
 ![Portfolio-lg](./sketches/Portfolio-lg.png)
+Contact page sketch \
 ![Contact-lg](./sketches/Contact-lg.png)
 
 
 ## The Output
-***
+
 With the research and application of concepts, we were able to create a responsive portfolio base-line. 
 As new projects are developed, they will be included into the portfolio.
 Additional functionality and style will be included in further stages.
@@ -75,21 +78,21 @@ The portfolio is integrated by the following pages and sections:
   - Non-profit Projects
 - Contact
 
-Home page
+__Home page__
 ![xs and sm](./assets/img/screen_shots/xs-index.png) 
 ![lg and xl](./assets/img/screen_shots/lg-xl--index.png)
 
-Portfolio page
+__Portfolio page__
 ![xs and sm](./assets/img/screen_shots/xs-portfolio.png)
 ![lg and xl](./assets/img/screen_shots/lg-xl-portfolio.png)
 
-Contact page
+__Contact page__
 ![xs and sm](./assets/img/screen_shots/xs-contact.png)
 ![lg and xl](./assets/img/screen_shots/lg-xl-contact.png)
 
 
 ## Installation
-***
+
 The project was uploaded to [GitHub](https://github.com/) at the following repository:
 [https://github.com/jorguzman100/02_Responsive_Portfolio](https://github.com/jorguzman100/02_Responsive_Portfolio)
 
@@ -98,7 +101,7 @@ You can access the deployed application with the GitHup Pages link:
 
 
 ## Tools and other References
-***
+
 [Bootstrap](https://getbootstrap.com/)
 
 [Balsamiq](https://balsamiq.com/)
@@ -123,5 +126,5 @@ You can access the deployed application with the GitHup Pages link:
 
 
 ## Aknowledgements
-***
+
 I appreciate the guide and support from Diana and Fernanda.
