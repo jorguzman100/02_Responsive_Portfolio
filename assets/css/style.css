@@ -1,6 +1,13 @@
-/* ================================= 
-    Global rules and element rules
-==================================== */
+/* ********************  Global  ******************** */
+/* ---------- The Header ---------- */
+header {
+  background: darkblue;
+  border-bottom: solid 3px rgb(2, 2, 224);
+  box-shadow: 1px 1px 3px gray;
+  padding: 10px 0px;
+}
+
+/* ---------- Main content ---------- */
 .img-fluid,
 .card {
   /* Bootstrap class modified to apply border radious to images */
@@ -15,18 +22,27 @@
   color: rgb(2, 2, 224);
 }
 
-/* ================================= 
-              Home Page
-==================================== */
-
-/* ---------- The Header ---------- */
-header {
+/* --------- The Page Footer --------- */
+footer .row {
   background: darkblue;
-  border-bottom: solid 3px rgb(2, 2, 224);
+  border-bottom: solid rgb(2, 2, 224);
   box-shadow: 1px 1px 3px gray;
-  padding: 10px 0px;
 }
 
+footer i {
+  font-size: 1.2rem;
+}
+
+#copyRight {
+  background: rgb(2, 2, 224);
+  margin: 0px;
+  padding: 0px;
+  font-size: 0.5rem;
+}
+
+/* ******************** Home Page ******************** */
+
+/* ---------- The Header ---------- */
 #parallax {
   background-image: url(./../../assets/img/internet-design.jpg);
   background-attachment: fixed; /* For not moving */
@@ -58,43 +74,27 @@ header {
 /* ------- Additional content ------- */
 
 /* --------- The Page Footer --------- */
-footer .row {
-  background: darkblue;
-  border-bottom: solid rgb(2, 2, 224);
-  box-shadow: 1px 1px 3px gray;
-}
 
-footer i {
-  font-size: 1.2rem;
-}
-
-#copyRight {
-  background: rgb(2, 2, 224);
-  margin: 0px;
-  padding: 0px;
-  font-size: 0.5rem;
-}
-
-/* ================================= 
-            Portfolio Page
-==================================== */
+/* ******************** Portfolio Page ******************** */
 
 /* ---------- The Header ---------- */
 
 /* ---------- Main content ---------- */
-
-/* ------- Additional content ------- */
 
 /* --------- The Page Footer --------- */
 
-/* ================================= 
-            Contact Page
-==================================== */
+/* ****************** Future Projects Page ****************** */
 
 /* ---------- The Header ---------- */
 
 /* ---------- Main content ---------- */
 
-/* ------- Additional content ------- */
+/* --------- The Page Footer --------- */
+
+/* ******************** Contact Page ******************** */
+
+/* ---------- The Header ---------- */
+
+/* ---------- Main content ---------- */
 
 /* --------- The Page Footer --------- */
