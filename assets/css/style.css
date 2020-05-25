@@ -1,11 +1,18 @@
 /* ================================= 
     Global rules and element rules
 ==================================== */
-.img-fluid {
+.img-fluid,
+.card {
   /* Bootstrap class modified to apply border radious to images */
   max-width: 100%;
   height: auto;
-  border-radius: 2%;
+  border-radius: 1px;
+  box-shadow: 0px 2px 2px gray;
+}
+
+.section-title,
+.section-subtitle {
+  color: rgb(2, 2, 224);
 }
 
 /* ================================= 
@@ -13,6 +20,25 @@
 ==================================== */
 
 /* ---------- The Header ---------- */
+header {
+  background: darkblue;
+  border-bottom: solid 3px rgb(2, 2, 224);
+  box-shadow: 1px 1px 3px gray;
+  padding: 10px 0px;
+}
+
+#parallax {
+  background-image: url(./../../assets/img/internet-design.jpg);
+  background-attachment: fixed; /* For not moving */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.intro {
+  padding: 150px 40px;
+  color: darkblue;
+}
 
 /* ---------- Main content ---------- */
 .mobile {
@@ -20,9 +46,34 @@
   font-size: 15rem;
 }
 
+.mobile-icon,
+.features i {
+  color: rgb(9, 32, 243);
+}
+
+.aCard {
+  background-color: rgb(9, 32, 243);
+}
+
 /* ------- Additional content ------- */
 
 /* --------- The Page Footer --------- */
+footer .row {
+  background: darkblue;
+  border-bottom: solid rgb(2, 2, 224);
+  box-shadow: 1px 1px 3px gray;
+}
+
+footer i {
+  font-size: 1.2rem;
+}
+
+#copyRight {
+  background: rgb(2, 2, 224);
+  margin: 0px;
+  padding: 0px;
+  font-size: 0.5rem;
+}
 
 /* ================================= 
             Portfolio Page
