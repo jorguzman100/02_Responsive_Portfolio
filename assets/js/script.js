@@ -37,6 +37,60 @@ $(document).ready(() => {
     });
   }
   /* ---------- Main content ---------- */
+  $(".introCard").hide();
+  $(".projectCard").hide();
+  $(".introCard").fadeIn(1000);
+  $(".card-img-overlay .liked").hide();
+
+  $(".introCard").on("mouseenter", (event) => {
+    console.log("data-index: ", event.target.getAttribute("data-index"));
+
+    Object.values($(".introCard")).forEach((introCard) => {
+      if (
+        $(introCard).attr("data-index") ===
+        event.target.getAttribute("data-index")
+      ) {
+        console.log("data-index", $(introCard).attr("data-index"));
+        $(introCard).fadeOut(200);
+      }
+    });
+    Object.values($(".projectCard")).forEach((projectCard) => {
+      if (
+        $(projectCard).attr("data-index") ===
+        event.target.getAttribute("data-index")
+      ) {
+        console.log("data-index", $(projectCard).attr("data-index"));
+        setTimeout(() => {
+          $(projectCard).fadeIn(200);
+        }, 200);
+      }
+    });
+  });
+
+  $(".projectCard").on("mouseleave", (event) => {
+    console.log("data-index: ", event.target.getAttribute("data-index"));
+
+    Object.values($(".introCard")).forEach((introCard) => {
+      if (
+        $(introCard).attr("data-index") ===
+        event.target.getAttribute("data-index")
+      ) {
+        console.log("data-index", $(introCard).attr("data-index"));
+        setTimeout(() => {
+          $(introCard).fadeIn(200);
+        }, 200);
+      }
+    });
+    Object.values($(".projectCard")).forEach((projectCard) => {
+      if (
+        $(projectCard).attr("data-index") ===
+        event.target.getAttribute("data-index")
+      ) {
+        console.log("data-index", $(projectCard).attr("data-index"));
+        $(projectCard).fadeOut(200);
+      }
+    });
+  });
 
   /* --------- The Page Footer --------- */
 

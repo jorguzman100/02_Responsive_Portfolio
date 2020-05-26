@@ -43,6 +43,8 @@ footer i {
 /* ******************** Home Page ******************** */
 
 /* ---------- The Header ---------- */
+/* Parallax --- 
+Source: https://www.youtube.com/watch?v=iGam6w8Jz9g&t=728s */
 #parallax {
   background-image: url(./../../assets/img/internet-design.jpg);
   background-attachment: fixed; /* For not moving */
@@ -50,6 +52,7 @@ footer i {
   background-repeat: no-repeat;
   background-size: cover;
 }
+/* --- / Parallax */
 
 .intro {
   padding: 150px 40px;
@@ -80,6 +83,50 @@ footer i {
 /* ---------- The Header ---------- */
 
 /* ---------- Main content ---------- */
+.introCard img,
+.projectCard img {
+  height: 300px !important;
+}
+
+.projectCard img {
+  opacity: 0.4;
+}
+
+.projectCard {
+  background-color: black;
+}
+
+/* A darker image --- 
+Reference: https://www.youtube.com/watch?time_continue=3&v=h3gktsmp3Oo&feature=emb_logo
+.introCard img {
+  opacity: 0.5;
+}
+
+.introCard {
+  background-color: black;
+}
+--- / A darker image */
+
+.card-img-overlay h5 {
+  text-align: center;
+  padding-top: 10%;
+  padding-bottom: 5%;
+}
+
+.card-img-overlay {
+  text-align: center;
+}
+
+.card-img-overlay i {
+  color: yellowgreen;
+  font-size: 2.5rem;
+  margin: 30% 0.75rem;
+}
+
+.card-img-overlay a {
+  margin: 0px;
+  padding: 0px;
+}
 
 /* --------- The Page Footer --------- */
 
