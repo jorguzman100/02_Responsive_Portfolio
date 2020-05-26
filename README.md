@@ -1,13 +1,14 @@
 # 02_Responsive_Portfolio
+
 A Web Development and Digital Marketing Agency Portfolio. \
 Built with HTML, CSS, JavaScript and Bootstrap library.
-
 
 ## The Challenge
 
 The author is interested on launching a Web Development and Digital Marketing Agency. For this purpose, it is requiered to have a Portfolio website where the best example projects are shown.
 
 The portfolio will integrate the following development best practices and characteristics:
+
 - [x] Design and develop with the Mobile-First approach.
 - [x] Apply Responsive Layout and images, for larger screen sizes.
 - [x] Utilize Bootstrap Components and Grid System.
@@ -15,15 +16,17 @@ The portfolio will integrate the following development best practices and charac
 - [x] Confirm valid HTML with an external validation service.
 
 Additional requirements:
+
 - [x] Functional, deployed application
 - [x] GitHub repository with README describing the project
 - [x] Navbar consistent on each page.
 - [x] Navbar on each page must contain links to Home/About, Contact, and Portfolio pages.
 - [x] All links must work.
 
-## The  development process
+## The development process
 
 In order to accomplish the challenge, the following steps were executed:
+
 1. Define the purpose and plan the general idea of the site.
 2. Sketch the pages and main sections, considering two stages:
    - Mobile-first approach.
@@ -39,16 +42,16 @@ In order to accomplish the challenge, the following steps were executed:
 
 ## The sketches
 
-__Mobile-first approach__
+**Mobile-first approach**
 
 Home page sketch \
 ![Home-sm](./sketches/Home-sm.png) \
 Portfolio page sketch \
 ![Portfolio-sm](./sketches/Portfolio-sm.png) \
 Contact page sketch \
-![Contact-sm](./sketches/Contact-sm.png) 
+![Contact-sm](./sketches/Contact-sm.png)
 
-__Larger Screens__
+**Larger Screens**
 Home page sketch \
 ![Home-lg](./sketches/Home-lg.png)
 Portfolio page sketch \
@@ -56,14 +59,14 @@ Portfolio page sketch \
 Contact page sketch \
 ![Contact-lg](./sketches/Contact-lg.png)
 
-
 ## The Output
 
-With the research and application of concepts, we were able to create a responsive portfolio base-line. 
+With the research and application of concepts, we were able to create a responsive portfolio base-line.
 As new projects are developed, they will be included into the portfolio.
 Additional functionality and style will be included in further stages.
 
 The portfolio is integrated by the following pages and sections:
+
 - Home
   - Our Services
   - A business Mindset
@@ -78,18 +81,17 @@ The portfolio is integrated by the following pages and sections:
   - Non-profit Projects
 - Contact
 
-__Home page__
-![xs and sm](./assets/img/screen_shots/xs-index.png) 
-![lg and xl](./assets/img/screen_shots/lg-xl--index.png)
+**Home page**
+![Screenshot1](./assets/img/screen-shots/blue-style-screenshots/BlueScreenShot1.png)
 
-__Portfolio page__
-![xs and sm](./assets/img/screen_shots/xs-portfolio.png)
-![lg and xl](./assets/img/screen_shots/lg-xl-portfolio.png)
+**Portfolio page**
+![Screenshot1](./assets/img/screen-shots/blue-style-screenshots/BlueScreenShot2.png)
 
-__Contact page__
-![xs and sm](./assets/img/screen_shots/xs-contact.png)
-![lg and xl](./assets/img/screen_shots/lg-xl-contact.png)
+**Future Projects page**
+![Screenshot1](./assets/img/screen-shots/blue-style-screenshots/BlueScreenShot3.png)
 
+**Contact page**
+![Screenshot1](./assets/img/screen-shots/blue-style-screenshots/BlueScreenShot4.png)
 
 ## Installation
 
@@ -98,7 +100,6 @@ The project was uploaded to [GitHub](https://github.com/) at the following repos
 
 You can access the deployed application with the GitHup Pages link:
 [https://jorguzman100.github.io/02_Responsive_Portfolio/](https://jorguzman100.github.io/02_Responsive_Portfolio/)
-
 
 ## Tools and other References
 
@@ -123,7 +124,6 @@ You can access the deployed application with the GitHup Pages link:
 [Markup Validation Service](https://validator.w3.org/)
 
 [Semantic HTML](https://teamtreehouse.com/library/semantic-html-header-footer-and-section)
-
 
 ## Aknowledgements
 
