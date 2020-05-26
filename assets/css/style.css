@@ -115,6 +115,7 @@ Reference: https://www.youtube.com/watch?time_continue=3&v=h3gktsmp3Oo&feature=e
 
 .card-img-overlay {
   text-align: center;
+  padding: 0px !important;
 }
 
 .card-img-overlay i {

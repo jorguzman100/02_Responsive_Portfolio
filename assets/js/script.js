@@ -37,12 +37,89 @@ $(document).ready(() => {
     });
   }
   /* ---------- Main content ---------- */
-  $(".introCard").hide();
+  $(".introCard").show();
   $(".projectCard").hide();
-  $(".introCard").fadeIn(1000);
+  /* $(".introCard").fadeIn(1000); */
+  /* $(".projectCard").fadeIn(1000); */
   $(".card-img-overlay .liked").hide();
 
+  // With HTML changed: projectCard is an overlay of introCard
   $(".introCard").on("mouseenter", (event) => {
+    console.log("data-index: ", event.target.getAttribute("data-index"));
+    Object.values($(".projectCard")).forEach((projectCard) => {
+      if (
+        $(projectCard).attr("data-index") ===
+        event.target.getAttribute("data-index")
+      ) {
+        console.log("data-index", $(projectCard).attr("data-index"));
+        /* $(projectCard).show(); */
+        $(projectCard).fadeIn(500);
+      }
+    });
+  });
+
+  $(".projectCard").on("mouseleave", (event) => {
+    console.log("data-index: ", event.target.getAttribute("data-index"));
+    Object.values($(".projectCard")).forEach((projectCard) => {
+      if (
+        $(projectCard).attr("data-index") ===
+        event.target.getAttribute("data-index")
+      ) {
+        console.log("data-index", $(projectCard).attr("data-index"));
+        $(".projectCard").fadeOut(200);
+      }
+    });
+  });
+
+  // With hide() and show()
+  /* $(".introCard").on("mouseenter", (event) => {
+    console.log("data-index: ", event.target.getAttribute("data-index"));
+
+    Object.values($(".introCard")).forEach((introCard) => {
+      if (
+        $(introCard).attr("data-index") ===
+        event.target.getAttribute("data-index")
+      ) {
+        console.log("data-index", $(introCard).attr("data-index"));
+        $(introCard).hide();
+      }
+    });
+    Object.values($(".projectCard")).forEach((projectCard) => {
+      if (
+        $(projectCard).attr("data-index") ===
+        event.target.getAttribute("data-index")
+      ) {
+        console.log("data-index", $(projectCard).attr("data-index"));
+        $(projectCard).show();
+      }
+    });
+  });
+
+  $(".projectCard").on("mouseleave", (event) => {
+    console.log("data-index: ", event.target.getAttribute("data-index"));
+
+    Object.values($(".introCard")).forEach((introCard) => {
+      if (
+        $(introCard).attr("data-index") ===
+        event.target.getAttribute("data-index")
+      ) {
+        console.log("data-index", $(introCard).attr("data-index"));
+        $(introCard).show();
+      }
+    });
+    Object.values($(".projectCard")).forEach((projectCard) => {
+      if (
+        $(projectCard).attr("data-index") ===
+        event.target.getAttribute("data-index")
+      ) {
+        console.log("data-index", $(projectCard).attr("data-index"));
+        $(projectCard).hide();
+      }
+    });
+  }); */
+
+  // With fadeIn(), fadeOut() and setTimeOut()
+  /* $(".introCard").on("mouseenter", (event) => {
     console.log("data-index: ", event.target.getAttribute("data-index"));
 
     Object.values($(".introCard")).forEach((introCard) => {
@@ -90,7 +167,7 @@ $(document).ready(() => {
         $(projectCard).fadeOut(200);
       }
     });
-  });
+  }); */
 
   /* --------- The Page Footer --------- */
 
