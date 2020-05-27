@@ -39,19 +39,16 @@ $(document).ready(() => {
   /* ---------- Main content ---------- */
   $(".introCard").show();
   $(".projectCard").hide();
-  /* $(".introCard").fadeIn(1000); */
-  /* $(".projectCard").fadeIn(1000); */
-  $(".card-img-overlay .liked").hide();
 
   // With HTML changed: projectCard is an overlay of introCard
   $(".introCard").on("mouseenter", (event) => {
-    console.log("data-index: ", event.target.getAttribute("data-index"));
+    /* console.log("data-index: ", event.target.getAttribute("data-index")); */
     Object.values($(".projectCard")).forEach((projectCard) => {
       if (
         $(projectCard).attr("data-index") ===
         event.target.getAttribute("data-index")
       ) {
-        console.log("data-index", $(projectCard).attr("data-index"));
+        /* console.log("data-index", $(projectCard).attr("data-index")); */
         /* $(projectCard).show(); */
         $(projectCard).fadeIn(500);
       }
@@ -59,115 +56,88 @@ $(document).ready(() => {
   });
 
   $(".projectCard").on("mouseleave", (event) => {
-    console.log("data-index: ", event.target.getAttribute("data-index"));
+    /* console.log("data-index: ", event.target.getAttribute("data-index")); */
     Object.values($(".projectCard")).forEach((projectCard) => {
       if (
         $(projectCard).attr("data-index") ===
         event.target.getAttribute("data-index")
       ) {
-        console.log("data-index", $(projectCard).attr("data-index"));
+        /* console.log("data-index", $(projectCard).attr("data-index")); */
         $(".projectCard").fadeOut(200);
       }
     });
   });
 
-  // With hide() and show()
-  /* $(".introCard").on("mouseenter", (event) => {
-    console.log("data-index: ", event.target.getAttribute("data-index"));
+  let likes = [];
+  function getLocalStorageLikes() {
+    console.log("getLocalStorageLikes()");
+    let likes = JSON.parse(localStorage.getItem("likes"));
+    return likes;
+  }
 
-    Object.values($(".introCard")).forEach((introCard) => {
-      if (
-        $(introCard).attr("data-index") ===
-        event.target.getAttribute("data-index")
-      ) {
-        console.log("data-index", $(introCard).attr("data-index"));
-        $(introCard).hide();
-      }
-    });
-    Object.values($(".projectCard")).forEach((projectCard) => {
-      if (
-        $(projectCard).attr("data-index") ===
-        event.target.getAttribute("data-index")
-      ) {
-        console.log("data-index", $(projectCard).attr("data-index"));
-        $(projectCard).show();
-      }
-    });
+  /* $(".card-img-overlay .like").parent().hide();
+  $(".card-img-overlay .liked").parent().hide(); */
+
+  /* $(".card-img-overlay .like").parent().attr("class", "hide");
+  $(".card-img-overlay .liked").parent().attr("class", "hide"); */
+
+  /* $(".aLike").hide(); */
+  $(".aLiked").hide();
+
+  displayLikes();
+
+  function displayLikes() {
+    console.log("displayLikes()");
+    likes = getLocalStorageLikes();
+    console.log("likes: ", likes);
+    if (likes != null) {
+      likes.forEach((likeIndex) => {
+        document.querySelectorAll(".aLike").forEach((a, index) => {
+          if (likeIndex === index.toString()) {
+            console.log("Matched: " + likeIndex + " = " + index);
+            let liked = "#liked" + likeIndex;
+            $(liked).show();
+            a.style.display = "none";
+            console.log("a: ", a);
+          }
+        });
+      });
+    }
+  }
+
+  $(".like").on("click", (event) => {
+    $(event.target).parent().hide();
+    let liked = "#liked" + $(event.target).parent().parent().attr("data-index");
+    $(liked).show();
+    if (likes === null) {
+      likes = [];
+    }
+    likes.push($(event.target).parent().parent().attr("data-index"));
+    likesStr = JSON.stringify(likes);
+    localStorage.setItem("likes", likesStr);
+    console.log("likes: ", likes);
+    // displayLikes();
   });
 
-  $(".projectCard").on("mouseleave", (event) => {
-    console.log("data-index: ", event.target.getAttribute("data-index"));
-
-    Object.values($(".introCard")).forEach((introCard) => {
-      if (
-        $(introCard).attr("data-index") ===
-        event.target.getAttribute("data-index")
-      ) {
-        console.log("data-index", $(introCard).attr("data-index"));
-        $(introCard).show();
-      }
-    });
-    Object.values($(".projectCard")).forEach((projectCard) => {
-      if (
-        $(projectCard).attr("data-index") ===
-        event.target.getAttribute("data-index")
-      ) {
-        console.log("data-index", $(projectCard).attr("data-index"));
-        $(projectCard).hide();
-      }
-    });
-  }); */
-
-  // With fadeIn(), fadeOut() and setTimeOut()
-  /* $(".introCard").on("mouseenter", (event) => {
-    console.log("data-index: ", event.target.getAttribute("data-index"));
-
-    Object.values($(".introCard")).forEach((introCard) => {
-      if (
-        $(introCard).attr("data-index") ===
-        event.target.getAttribute("data-index")
-      ) {
-        console.log("data-index", $(introCard).attr("data-index"));
-        $(introCard).fadeOut(200);
-      }
-    });
-    Object.values($(".projectCard")).forEach((projectCard) => {
-      if (
-        $(projectCard).attr("data-index") ===
-        event.target.getAttribute("data-index")
-      ) {
-        console.log("data-index", $(projectCard).attr("data-index"));
-        setTimeout(() => {
-          $(projectCard).fadeIn(200);
-        }, 200);
-      }
-    });
+  $(".liked").on("click", (event) => {
+    $(event.target).parent().hide();
+    let like = "#like" + $(event.target).parent().parent().attr("data-index");
+    let liked = "#liked" + $(event.target).parent().parent().attr("data-index");
+    $(like).show();
+    $(liked).hide();
+    if (likes === null) {
+      likes = [];
+    }
+    let arrayIndex = likes.indexOf(
+      $(event.target).parent().parent().attr("data-index")
+    );
+    console.log("arrayIndex: ", arrayIndex);
+    likes.splice(arrayIndex, 1);
+    likesStr = JSON.stringify(likes);
+    localStorage.setItem("likes", likesStr);
+    console.log("likes: ", likes);
+    // displayLikes();
   });
-
-  $(".projectCard").on("mouseleave", (event) => {
-    console.log("data-index: ", event.target.getAttribute("data-index"));
-
-    Object.values($(".introCard")).forEach((introCard) => {
-      if (
-        $(introCard).attr("data-index") ===
-        event.target.getAttribute("data-index")
-      ) {
-        console.log("data-index", $(introCard).attr("data-index"));
-        setTimeout(() => {
-          $(introCard).fadeIn(200);
-        }, 200);
-      }
-    });
-    Object.values($(".projectCard")).forEach((projectCard) => {
-      if (
-        $(projectCard).attr("data-index") ===
-        event.target.getAttribute("data-index")
-      ) {
-        console.log("data-index", $(projectCard).attr("data-index"));
-        $(projectCard).fadeOut(200);
-      }
-    });
-  }); */
 
   /* --------- The Page Footer --------- */
 

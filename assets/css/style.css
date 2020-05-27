@@ -121,13 +121,17 @@ Reference: https://www.youtube.com/watch?time_continue=3&v=h3gktsmp3Oo&feature=e
 .card-img-overlay i {
   color: yellowgreen;
   font-size: 2.5rem;
-  margin: 30% 0.75rem;
+  margin: 30% 0.5rem;
 }
 
 .card-img-overlay a {
   margin: 0px;
   padding: 0px;
 }
+
+/* .hide {
+  display: none;
+} */
 
 /* --------- The Page Footer --------- */
 
