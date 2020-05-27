@@ -43,6 +43,12 @@ footer i {
 /* ******************** Home Page ******************** */
 
 /* ---------- The Header ---------- */
+
+/* Home introduction carousel */
+#homeIntroCarousel img {
+  height: 450px;
+}
+
 /* Parallax --- 
 Source: https://www.youtube.com/watch?v=iGam6w8Jz9g&t=728s */
 #parallax {
@@ -53,6 +59,23 @@ Source: https://www.youtube.com/watch?v=iGam6w8Jz9g&t=728s */
   background-size: cover;
 }
 /* --- / Parallax */
+
+#parallax2 {
+  background-image: url(./../../assets/img/business_mindset.jpg);
+  background-attachment: fixed; /* For not moving */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#parallax2 .wrapper {
+  padding: 70px 30px 90px;
+}
+
+.wrapper h4 {
+  padding-top: 40px;
+  color: rgb(100, 98, 98);
+}
 
 .intro {
   padding: 150px 40px;
@@ -86,6 +109,10 @@ Source: https://www.youtube.com/watch?v=iGam6w8Jz9g&t=728s */
 .introCard img,
 .projectCard img {
   height: 300px !important;
+}
+
+.introCard .card-text {
+  padding: 10px;
 }
 
 .projectCard img {
