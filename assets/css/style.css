@@ -112,7 +112,7 @@ Source: https://www.youtube.com/watch?v=iGam6w8Jz9g&t=728s */
 }
 
 .introCard .card-text {
-  padding: 10px;
+  padding: 0px 30px;
 }
 
 .projectCard img {
@@ -145,6 +145,10 @@ Reference: https://www.youtube.com/watch?time_continue=3&v=h3gktsmp3Oo&feature=e
   padding: 0px !important;
 }
 
+.card-img-overlay .card-text {
+  text-align: justify;
+}
+
 .card-img-overlay i {
   color: yellowgreen;
   font-size: 2.5rem;
@@ -174,5 +178,11 @@ Reference: https://www.youtube.com/watch?time_continue=3&v=h3gktsmp3Oo&feature=e
 /* ---------- The Header ---------- */
 
 /* ---------- Main content ---------- */
+#cheers1 {
+  color: gray;
+}
 
+#cheers2 {
+  color: blue;
+}
 /* --------- The Page Footer --------- */
